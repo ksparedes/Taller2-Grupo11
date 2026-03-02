@@ -1,15 +1,13 @@
-import java.util.ArrayList;
-import java.util.Scanner;
 
-public class guardarCliente {
+public class Clientes {
  
     private int id_cliente;
     private boolean cliente_activo;
-    private String nombre 
-    private String apellido
-    private int telefono
+    private String nombre; 
+    private String apellido;
+    private int telefono;
 
-    public guardarCliente(int id_cliente, boolean cliente_activo) {
+    public Clientes(int id_cliente, boolean cliente_activo) {
         this.id_cliente = id_cliente;
         this.cliente_activo = cliente_activo;
         this.nombre=nombre;
@@ -18,7 +16,7 @@ public class guardarCliente {
        
     }
 
-      public int getId(){return id;}
+      public int getId(){return id_cliente;}
     public String getNombre(){return nombre;}
     public String getApellido(){return apellido;}
     public int getTelefono(){return telefono;}
@@ -29,7 +27,7 @@ public class guardarCliente {
 
     @Override
     public String toString() {
-        return id_cliente + "," + cliente_activo";
+        return id_cliente + "," + cliente_activo;
     }
 }
       
