@@ -2,28 +2,28 @@
 public class Clientes {
  
     private int id_cliente;
-    private boolean cliente_activo;
+    private int activo;
     private String nombre; 
     private String apellido;
-    private int telefono;
+    private String telefono;
 
-    public Clientes(int id_cliente, boolean cliente_activo) {
+    public Clientes(int id_cliente, String nombre, int activo, String telefono, String apellido) {
         this.id_cliente = id_cliente;
-        this.cliente_activo = cliente_activo;
+        this.activo = activo;
         this.nombre=nombre;
         this.apellido=apellido;
         this.telefono=telefono;
        
     }
-
-      public int getId(){return id_cliente;}
-    public String getNombre(){return nombre;}
-    public String getApellido(){return apellido;}
-    public int getTelefono(){return telefono;}
-    public Boolean getEstado(){return cliente_activo;}
-    public void setNombre(String nombre){this.nombre=nombre;}
-    public void setapellido(String apellido){this.apellido=apellido;}
-    
+    public int getId(){
+        return id_cliente;
+    }
+    public String getActivo(){
+        return activo;
+    }
+    public void setActivo(int activo){
+        this.activo = activo;
+    }
 
     @Override
     public String toString() {
