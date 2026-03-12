@@ -1,33 +1,23 @@
-public class id_pedido {
-    private int id_pedido;
-    private int id_cliente;
+public class Pedido {
+    private int idcliente;
+    private int idpedido;
+    private String categoria;
     private String producto;
-    private int precio;
-    private int cantidad;
-    private int activo;
 
-
-    public Usuario(int id_pedido, int id_cliente, String producto, double precio, int cantidad, int activo) {
-        this.id_pedido = id_pedido;
+    public Pedido(int idcliente, int idpedido, String categoria, String producto) {
+        this.idcliente = idcliente;
+        this.idpedido = idpedido;
+        this.categoria = categoria;
         this.producto = producto;
-        this.id_cliente = id_cliente;
-        this.activo = activo;
-        this.precio=precio;
-        this.cantidad=cantidad;
     }
-    public int getId_cliente(){
-        return id_cliente;
-    }
-    public int getActivo(){
-        return activo;
-    } 
-    public void setActivo(int Activo){
-        this.activo = activo;
-    }    
-
+    public int getIdc(){return idcliente;}
+    public int getIdp(){return idpedido;}
+    public String getCategoria(){return categoria;}
+    public String getProducto(){return producto;}
+    public void setCategoria(String nombre){this.categoria=categoria;}
+    public void setProducto(String email){this.producto=producto;}
     @Override
     public String toString() {
-        return id + "," + nombre + "," + email;
+        return idpedido + "," + idcliente+ "," + categoria + "," + producto;
     }
 }
-      
