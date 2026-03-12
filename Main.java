@@ -36,7 +36,15 @@ public class Main {
                 break;
 
                 case 5:
+                    System.out.println("ID cliente:");
+                    int Idcliente = sc.nextInt();
+                    for(Pedido pe: CRUDpedido.leerPedido()){
 
+                        if(pe.getIdc() == Idcliente){
+                            System.out.println(pe);
+                        }
+
+                    }
                   
 
                 break;
