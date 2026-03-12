@@ -20,6 +20,20 @@ public class Main {
 
             switch (opcion) {
                 case 1:
+                    
+                    System.out.println("ID:");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.println("Nombre:");
+                    String nombre = sc.nextLine();
+
+                    System.out.println("Email:");
+                    String email = sc.nextLine();
+
+                    Usuario u = new Usuario(id,nombre,email);
+
+                    CRUDarchivo.crearUsuario(u);
                    
                 break;
 
