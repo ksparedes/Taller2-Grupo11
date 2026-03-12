@@ -32,6 +32,22 @@ public class Main {
                 break;
 
                 case 4:
+                    System.out.println("ID pedido:");
+                    int idpedido = sc.nextInt();
+
+                    System.out.println("ID cliente:");
+                    int idcliente = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.println("Categoria:");
+                    String categoria = sc.nextLine();
+
+                    System.out.println("Producto:");
+                    String producto = sc.nextLine();
+
+                    Pedido p = new Pedido(idpedido,idcliente,categoria, producto);
+
+                    CRUDpedido.crearPedido(p);
 
                 break;
 
