@@ -24,11 +24,16 @@ public class Main {
                 break;
 
                 case 2:
-                     
+                    for(Usuario user : CRUDarchivo.leerUsuarios()){
+                        System.out.println(user);
+                    }                    
                 break;
 
                 case 3:
+                    System.out.println("ID a eliminar:");
+                    int idEliminar = sc.nextInt();
 
+                    CRUDarchivo.eliminarUsuario(idEliminar);
                 break;
 
                 case 4:
